@@ -24,8 +24,8 @@ var helpers = {
    *
    */
   cdnify: function (data) {
-    var cdnBaseUrl = 'http://cdn.clusterfest.com.s3-website-us-east-1.amazonaws.com';
-    var apiBaseUrl = 'http://clusterfest-prod.us-east-1.elasticbeanstalk.com';
+    var cdnBaseUrl = '';
+    var apiBaseUrl = '';
 
     if (typeof data === 'string') {
         data = String(data).replace(new RegExp('src="/sites/default/files/content','g'), 'src="' + cdnBaseUrl);
@@ -48,8 +48,8 @@ var helpers = {
    */
   getContent: function (data, nid, value, cdn) {
 
-    var cdnBaseUrl = 'http://cdn.clusterfest.com.s3-website-us-east-1.amazonaws.com';
-    var apiBaseUrl = 'http://clusterfest-prod.us-east-1.elasticbeanstalk.com';
+    var cdnBaseUrl = '';
+    var apiBaseUrl = '';
     var content = data.filter(function(v){ return v["nid"]["0"]["value"] === nid; });
     var content_value = content;
 
