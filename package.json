@@ -1,0 +1,14 @@
+{
+  "name": "handlebars-content-helper-module",
+  "version": "1.0.4",
+  "description": "A package for Handlebars Helpers to be used with Assemble static site generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Assemble"
+  ],
+  "author": "samwhiteiv",
+  "license": "ISC"
+}
